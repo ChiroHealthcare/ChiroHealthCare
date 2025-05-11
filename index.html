@@ -1,89 +1,104 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chiropractic Health Care Center - Pain Relief Without Medicine" />
   <title>Chiropractic Health Care Center</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #008080;
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    h1, h2 {
-      color: #008080;
-    }
-    .services, .contact, .about {
-      background: #fff;
-      border-radius: 10px;
-      padding: 30px;
-      margin: 20px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .btn {
-      background-color: #008080;
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #00a97f; color: white; padding: 20px 0; text-align: center; }
+    nav { background: #00755e; padding: 10px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    section { padding: 20px; }
+    footer { background: #222; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    .highlight { color: #00a97f; font-weight: bold; }
+    form { max-width: 500px; margin: 0 auto; }
+    label { display: block; margin-top: 10px; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 5px; }
+    button { background: #00a97f; color: white; padding: 10px 20px; border: none; margin-top: 10px; cursor: pointer; }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
       color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
+      border-radius: 50px;
       text-align: center;
-      background-color: #004d4d;
-      color: white;
-      padding: 20px;
-      margin-top: 20px;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+    .whatsapp-icon {
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Chiropractic Health Care Center</h1>
-    <p>Without Medicine – Only Bone Adjustment Therapy</p>
-  </header>
-
-  <section class="about">
+    <p>Pain Relief Without Medicine – Bone Adjustment Therapy</p>
+  </header>  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="about">
     <h2>About Us</h2>
-    <p>Led by Dr. Mohit Verma (Physiotherapist, KGMU) and Dr. N.K. Verma (Neuro & Chiropractor), our center provides expert chiropractic and neurotherapy treatments for pain relief, mobility, and wellness.</p>
-  </section>
-
-  <section class="services">
+    <p>Welcome to <span class="highlight">Chiropractic Health Care Center</span>, Shahjahanpur’s trusted destination for pain relief through 100% natural and drug-free therapies. We offer expert chiropractic, physiotherapy, and neurotherapy services to help you live pain-free.</p>
+    <p><strong>Dr. Mohit Verma</strong> – Chiropractor & Physiotherapist (KGMU, Lucknow)<br>
+       <strong>Dr. N.K. Verma</strong> – Neuro & Chiropractic Specialist</p>
+  </section>  <section id="services">
     <h2>Our Services</h2>
     <ul>
       <li>Chiropractic Adjustments</li>
+      <li>Bone & Joint Alignment</li>
       <li>Back & Neck Pain Relief</li>
       <li>Sciatica Treatment</li>
+      <li>Slip Disc, Spondylitis (Cervical/Lumbar)</li>
+      <li>Frozen Shoulder, Joint Stiffness</li>
       <li>Posture Correction</li>
-      <li>Frozen Shoulder</li>
-      <li>Arthritis – Knee, Hip, Shoulder</li>
-      <li>Slip Disc / Spondylitis</li>
-      <li>Migraine & Headache Relief</li>
+      <li>Arthritis (Knee, Hip, Shoulder)</li>
+      <li>Migraine & Cervicogenic Headache</li>
+      <li>Piles (Supportive Therapy)</li>
     </ul>
-  </section>
-
-  <section class="contact">
+  </section>  <section id="gallery">
+    <h2>Clinic Gallery</h2>
+    <p>Images and treatment visuals coming soon...</p>
+  </section>  <section id="reviews">
+    <h2>What Our Patients Say</h2>
+    <blockquote>
+      “Lower back pain vanished in just 3 sessions. Very professional and effective care.” – Ravi K.
+    </blockquote>
+    <blockquote>
+      “Sciatica problem solved without any medicine. Highly recommended!” – Priya S.
+    </blockquote>
+  </section>  <section id="contact">
     <h2>Book Appointment</h2>
-    <p>Powayan Road, Niyamatpur Gate, Shahjahanpur, U.P.</p>
-    <p>Call/WhatsApp: <strong>+91 99363 98620</strong></p>
-    <a href="https://wa.me/919936398620" class="btn">Book on WhatsApp</a>
-  </section>
+    <form action="mailto:yourclinicemail@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required>
 
-  <footer>
-    <p>&copy; 2025 Chiropractic Health Care Center. All Rights Reserved.</p>
+  <label for="date">Preferred Date:</label>
+  <input type="date" id="date" name="date">
+
+  <label for="message">Your Concern:</label>
+  <textarea id="message" name="message" rows="4"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+<p><strong>Address:</strong> Powayan Road, Niyamatpur Gate, Shahjahanpur, Uttar Pradesh</p>
+<p><strong>Phone/WhatsApp:</strong> <a href="tel:+919936398620">+91 99363 98620</a></p>
+<p><strong>Timings:</strong> Daily 9AM – 7PM (Appointment Required)</p>
+<p><a href="https://maps.app.goo.gl/NMJU8VSgB2kNMJWo9" target="_blank">View on Google Maps</a></p>
+
+  </section>  <a href="https://wa.me/919936398620" class="whatsapp-float" target="_blank">
+    <div class="whatsapp-icon">&#x2709;</div>
+  </a>  <footer>
+    <p>&copy; 2025 Chiropractic Health Care Center | Designed for Wellness</p>
   </footer>
 </body>
 </html>
