@@ -1,104 +1,224 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Chiropractic Health Care Center - Pain Relief Without Medicine" />
+  <meta name="description" content="Expert Chiropractic Care for Pain Relief in Shahjahanpur">
   <title>Chiropractic Health Care Center</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #00a97f; color: white; padding: 20px 0; text-align: center; }
-    nav { background: #00755e; padding: 10px; text-align: center; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    section { padding: 20px; }
-    footer { background: #222; color: white; text-align: center; padding: 10px; margin-top: 20px; }
-    .highlight { color: #00a97f; font-weight: bold; }
-    form { max-width: 500px; margin: 0 auto; }
-    label { display: block; margin-top: 10px; }
-    input, textarea { width: 100%; padding: 10px; margin-top: 5px; }
-    button { background: #00a97f; color: white; padding: 10px 20px; border: none; margin-top: 10px; cursor: pointer; }
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50px;
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+   <style>
+    body { font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+    .navbar-custom { background-color: #004aad; }
+    .navbar-custom .nav-link, .navbar-custom .navbar-brand { color: #fff !important; }
+    .navbar-custom .nav-link:hover { color: #ffc107 !important; }
+
+    .hero {
+      background: no-repeat center center/cover;
+      padding: 100px 0;
       text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
-      z-index: 100;
+      color: black;
+      transition: background-image 1s ease-in-out;
     }
-    .whatsapp-icon {
-      margin-top: 15px;
-    }
+    .hero h1 { font-size: 3rem; font-weight: bold; }
+    .hero p { font-size: 1.2rem; }
+
+    .section { padding: 60px 0; }
+    .section-title { text-align: center; margin-bottom: 40px; font-size: 2.2rem; }
+    .service-box, .testimonial-box { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .gallery-img { width: 100%; height: auto; border-radius: 10px; }
+    .footer { background: #222; color: #fff; padding: 30px 0; text-align: center; }
+    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; z-index: 999; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Chiropractic Health Care Center</h1>
-    <p>Pain Relief Without Medicine – Bone Adjustment Therapy</p>
-  </header>  <nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-  </nav>  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to <span class="highlight">Chiropractic Health Care Center</span>, Shahjahanpur’s trusted destination for pain relief through 100% natural and drug-free therapies. We offer expert chiropractic, physiotherapy, and neurotherapy services to help you live pain-free.</p>
-    <p><strong>Dr. Mohit Verma</strong> – Chiropractor & Physiotherapist (KGMU, Lucknow)<br>
-       <strong>Dr. N.K. Verma</strong> – Neuro & Chiropractic Specialist</p>
-  </section>  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Chiropractic Adjustments</li>
-      <li>Bone & Joint Alignment</li>
-      <li>Back & Neck Pain Relief</li>
-      <li>Sciatica Treatment</li>
-      <li>Slip Disc, Spondylitis (Cervical/Lumbar)</li>
-      <li>Frozen Shoulder, Joint Stiffness</li>
-      <li>Posture Correction</li>
-      <li>Arthritis (Knee, Hip, Shoulder)</li>
-      <li>Migraine & Cervicogenic Headache</li>
-      <li>Piles (Supportive Therapy)</li>
-    </ul>
-  </section>  <section id="gallery">
-    <h2>Clinic Gallery</h2>
-    <p>Images and treatment visuals coming soon...</p>
-  </section>  <section id="reviews">
-    <h2>What Our Patients Say</h2>
-    <blockquote>
-      “Lower back pain vanished in just 3 sessions. Very professional and effective care.” – Ravi K.
-    </blockquote>
-    <blockquote>
-      “Sciatica problem solved without any medicine. Highly recommended!” – Priya S.
-    </blockquote>
-  </section>  <section id="contact">
-    <h2>Book Appointment</h2>
-    <form action="mailto:yourclinicemail@example.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><label for="phone">Phone:</label>
-  <input type="tel" id="phone" name="phone" required>
 
-  <label for="date">Preferred Date:</label>
-  <input type="date" id="date" name="date">
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp-btn" href="https://wa.me/919936398620" target="_blank">
+  <img src="logo.png" alt style="width:100px;height:100px; display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%;" />
+</a>
 
-  <label for="message">Your Concern:</label>
-  <textarea id="message" name="message" rows="4"></textarea>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Chiropractic HealthCare Center</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <button type="submit">Submit</button>
-</form>
-<p><strong>Address:</strong> Powayan Road, Niyamatpur Gate, Shahjahanpur, Uttar Pradesh</p>
-<p><strong>Phone/WhatsApp:</strong> <a href="tel:+919936398620">+91 99363 98620</a></p>
-<p><strong>Timings:</strong> Daily 9AM – 7PM (Appointment Required)</p>
-<p><a href="https://maps.app.goo.gl/NMJU8VSgB2kNMJWo9" target="_blank">View on Google Maps</a></p>
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Expert Chiropractic & Pain Relief</h1>
+    <p>Back, Neck, Joint Pain | Sciatica | Posture Correction | Migraine</p>
+    <a href="#appointment" class="btn btn-primary mt-3">Book Appointment</a>
+  </div>
+</section>
 
-  </section>  <a href="https://wa.me/919936398620" class="whatsapp-float" target="_blank">
-    <div class="whatsapp-icon">&#x2709;</div>
-  </a>  <footer>
-    <p>&copy; 2025 Chiropractic Health Care Center | Designed for Wellness</p>
-  </footer>
+<script>
+  const heroImages = [
+    "https://chirodenton.com/wp-content/uploads/004.jpg",
+    "https://allinjuryrehab.com/wp-content/uploads/2023/04/1-Top-10-Chiropractic-Care-Benefits.webp",
+	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPrvifmepj5rlWTktiyni3mgLBOfp2MrZ1-zkVlI76HrCsvUD4lxwyVYWvCQ9TaZ2R_cE&usqp=CAU"
+  ];
+  let currentIndex = 0;
+  const heroSection = document.querySelector('.hero');
+
+  function changeHeroImage() {
+    heroSection.style.backgroundImage = `url('${heroImages[currentIndex]}')`;
+    currentIndex = (currentIndex + 1) % heroImages.length;
+  }
+
+  changeHeroImage(); // initial
+  setInterval(changeHeroImage, 5000); // every 5 seconds
+</script>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Us</h2>
+    <p>Your trusted destination for natural healing and pain relief in Shahjahanpur.</br>
+Chiropractic Health Care Center एक आधुनिक और पेशेवर क्लिनिक है जहाँ हम बिना दवा और सर्जरी के शरीर के दर्द का समाधान करते हैं। </br>हमारा उद्देश्य है – </br>"Spine सही तो Life सही!"
+</br>
+हम  Chiropractor आपकी रीढ़ की हड्डी, जोड़ों, मांसपेशियों और नसों से संबंधित समस्याओं का इलाज करते हैं। यहाँ पर हम शरीर की वास्तविक जड़ से दर्द को पहचानकर उसका समाधान करते हैं।
+</br>
+✅ हमारी विशेषताएं:
+</br>व्यक्तिगत मूल्यांकन और ट्रीटमेंट प्लान
+
+</br>आधुनिक Chiropractic Techniques
+
+</br>1000+ मरीजों को राहत मिल चुकी है
+
+</br>महिलाओं और बुज़ुर्गों के लिए विशेष ध्यान
+</br>
+</br>WhatsApp द्वारा अपॉइंटमेंट और फॉलो-अप सुविधा
+
+</br>🧠 हम किन समस्याओं का इलाज करते हैं:
+</br>कमर और गर्दन का दर्द
+
+</br>सायटिका और नस दबने की समस्या
+
+</br>जोड़ों में अकड़न या सूजन
+
+</br>Frozen Shoulder, Slip Disc
+
+</br>Posture Correction
+
+</br>Arthritis, Migraine & Headaches
+
+</br>हमारी सेवाएं सुरक्षित, प्रभावी और पूरी तरह से मरीज के अनुकूल होती हैं। अगर आप दवाओं से थक चुके हैं और एक प्राकृतिक समाधान की तलाश में हैं – तो Chiropractic Health Care Center आपके लिए सबसे बेहतर विकल्प है।
+</br></br>
+हमारा उद्देश्य:
+</br><h4><b>"हर मरीज को दर्द-मुक्त जीवन देना और उनकी दैनिक गतिविधियों में सुधार लाना।"</b></h4>
+  
+  
+  <strong>Dr. Mohit Verma</strong> – Chiropractor &amp; Physiotherapist (KGMU, Lucknow)<br>
+       <strong>Dr. N.K. Verma</strong> – Neuro &amp; Chiropractic Specialist</p>
+</section></div>
+
+<!-- Services -->
+<section id="services" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 service-box">
+        <h5>Chiropractic Adjustments</h5>
+        <p>Gentle spinal corrections to restore alignment and reduce nerve pressure.</p>
+      </div>
+      <div class="col-md-4 service-box">
+        <h5>Back & Neck Pain Relief</h5>
+        <p>Targeted care for cervical and lumbar spine discomfort.</p>
+      </div>
+      <div class="col-md-4 service-box">
+        <h5>Posture Correction</h5>
+        <p>Improve your spinal posture and prevent long-term issues.</p>
+      </div>
+      <div class="col-md-4 service-box">
+        <h5>Sciatica & Lower Back Pain</h5>
+        <p>Non-surgical relief from sciatic nerve pain and stiffness.</p>
+      </div>
+      <div class="col-md-4 service-box">
+        <h5>Migraine & Cervical Headache</h5>
+        <p>Get relief from frequent migraines and stress-related headaches.</p>
+      </div>
+      <div class="col-md-4 service-box">
+        <h5>Arthritis Therapy</h5>
+        <p>Specialized support for knee, hip, and shoulder joint pain due to arthritis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="section">
+  <div class="container">
+    <h2 class="section-title">Gallery</h2>
+    <div class="row">
+      <div class="col-md-4 text-center"><img src="img5.png" class="gallery-img" alt="Treatment" /><h4>Nervous System</h4></div>
+	  <div class="col-md-4 text-center"><img src="img2.jpg" class="gallery-img" alt="Treatment" /><h4>Neck Pain</h4></div>
+	  <div class="col-md-4 text-center"><img src="img3.jpeg" class="gallery-img" alt="Treatment" /><h4>Back Pain</h4></div>
+	  <div class="col-md-4 text-center"><img src="img3.jpeg" class="gallery-img" alt="Treatment" /><h4>Back Pain</h4></div>
+	  <div class="col-md-4 text-center"><img src="img3.jpeg" class="gallery-img" alt="Treatment" /><h4>Back Pain</h4></div>
+	  <div class="col-md-4 text-center"><img src="img3.jpeg" class="gallery-img" alt="Treatment" /><h4>Back Pain</h4></div>
+	  </b>
+   
+   </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">What Our Patients Say</h2>
+    <div class="testimonial-box">
+      <p>"बहुत ही बढ़िया इलाज मिला। मेरे पीठ दर्द में बहुत आराम आया। Highly recommended!" - *Rahul Yadav*</p>
+    </div>
+    <div class="testimonial-box">
+      <p>"Professional और caring staff, सिर दर्द की समस्या से पूरी तरह राहत मिली।" - *Priya Sharma*</p>
+    </div>
+	<div class="testimonial-box">
+      <p>"Frozen shoulder की समस्या से 3 महीने से परेशान थी। 4-5 सेशन्स के अंदर ही बहुत आराम मिला। बिना दवा के इतना अच्छा इलाज कहीं नहीं मिला। Thank you!" - *Rahul Kumar*</p>
+    </div>
+  </div>
+</section>
+
+<!-- Appointment -->
+<section id="appointment" class="section">
+  <div class="container text-center">
+    <h2 class="section-title">Book Appointment</h2>
+    <p>Get personalized care by consulting with our expert chiropractor. Book now via WhatsApp.</p>
+    <a href="https://wa.me/919936398620" class="btn btn-success">Book via WhatsApp</a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <p><strong>Address:</strong> Powayan Road, Niyamatpur Chauraha, Shahjahanpur, UP - 242001</p>
+    <p><strong>Phone:</strong> +91-9936398620</p>
+    <p><strong>Email:</strong> chirohealthcare16@gmail.com</p>
+    <div class="mt-4">
+      <iframe src="https://maps.google.com/maps?q=Chiropractic%20Health%20Care%20Center%20Shahjahanpur&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 Chiropractic Health Care Center | All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
